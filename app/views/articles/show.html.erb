@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Status:</strong>
   <%= @article.title %>
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>Comment:</strong>
   <%= @article.body %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @article.user %>
+  <%= @article.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
