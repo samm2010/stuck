@@ -7,8 +7,14 @@
       <%= devise_error_messages! %>
 
       <div class="form-group">
-        <%= f.label :email %><br />
+        <%= f.label :email %><br/>
         <%= f.email_field :email, class: 'form-control'  %>
+        <%= f.label :age %><br/>
+        <%= f.text_field :age, class: 'form-control'  %>
+        <%= f.label :gender %><br/>
+        <%= f.text_field :gender, class: 'form-control'  %>
+        <%= f.label :bio %><br/>
+        <%= f.text_field :bio, class: 'form-control'  %>
       </div>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

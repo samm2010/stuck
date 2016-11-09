@@ -5,17 +5,18 @@
 <div class="row">
 
 <div class="col-md-4">
-	<%= gravatar_tag current_user.email , size: 200 %>
+	<%= gravatar_tag @user.email , size: 200 %>
 </div>
 	
 <div class="col-md-4">
-	<h3><%= current_user.email%></h3>
-	<p>Age:</h3>
-	<p>Gender:</h3>
+	<h3><%= @user.email%></h3>
+	<p>Age: <%= @user.age %></h3>
+	<p>Gender: <%= @user.gender %></h3>
 </div>
 
 <div class="col-md-4">
 	<h3>Who am I:</h3>	
+	<small>bio: <%= @user.bio %></small>
 	
 </div>
 
