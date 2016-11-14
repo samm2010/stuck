@@ -36,6 +36,7 @@ gem 'pundit', '~> 1.1'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'gravatarify', '~> 3.0.0'
 gem 'public_activity'
+gem 'auto_html'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
